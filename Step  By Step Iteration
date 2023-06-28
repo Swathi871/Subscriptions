@@ -1,0 +1,19 @@
+Step-by-step iteration:
+
+1) We start with an empty currentCombination vector.
+
+2) We iterate over each subscription (TOI, Hindu, ET, BM, HT) and add it to the currentCombination.
+
+3)  We move to the next day and repeat the process for each subscription.
+
+4) Once we reach the end of the week, we calculate the total cost of the currentCombination.
+
+5) If the total cost is within the budget, we add the currentCombination to the combinations vector.
+
+6) We backtrack by removing the last added subscription from the currentCombination and continue the iteration with other subscriptions.
+
+7) We repeat this process for all possible combinations.
+
+8) Finally, we display the possible combinations of subscriptions within the budget.
+
+This approach ensures that all possible combinations are considered, and only the combinations within the budget are stored and displayed
