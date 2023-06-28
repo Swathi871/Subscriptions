@@ -1,0 +1,27 @@
+Explanation
+
+1) We start by defining the `calculateSubscriptions` function. This function takes the subscriptions vector, budget, combinations vector,  currentCombination vector, and the day parameter.
+
+2) Inside the `calculateSubscriptions` function, we have the base case. If the current day is greater than or equal to the total number of days in a week (`day >= subscriptions[0].prices.size()`), we have reached the end of the week. We calculate the total cost of the current combination and check if it is within the budget.
+
+3) If the total cost is within the budget, we add the current combination to the `combinations` vector.
+
+4) Next, we iterate over each subscription in the subscriptions vector.
+
+5) We add the current subscription to the currentCombination vector and increment the day by 1 to move to the next day.
+
+6) We make a recursive call to the `calculateSubscriptions` function, passing the updated currentCombination, day, subscriptions, budget, and combinations.
+
+7) After the recursive call, we remove the last added subscription from the currentCombination vector. This step is known as backtracking, as it allows us to explore other possible combinations.
+
+8) The iteration continues for all subscriptions, exploring different combinations for each day.
+
+9) Finally, in the `main` function, we define the newspaper subscriptions (TOI, Hindu, ET, BM, HT) and get the weekly budget from the user.
+
+10)  We initialize empty vectors `combinations` and currentCombination` to store the valid combinations.
+
+11)  We call the `calculateSubscriptions` function with the provided parameters, initiating the process of generating all possible combinations within the budget.
+
+12)The function generates the combinations recursively and stores the valid ones in the `combinations` vector.
+
+13) Finally, we display the possible combinations of subscriptions within the budget.
