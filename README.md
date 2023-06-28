@@ -5,8 +5,8 @@ Please do not accept the below data from the command
 line/console, rather use a suitable data
 structure to store below values (class/struct).
 
-           Monday | Tuesday | Wednesday | Thursday |Friday |Saturday |Sunday
-ToI           3        3          H          3         3        5        6
+           Monday | Tuesday | Wednesday | Thursday |Friday |Saturday |Sunday |
+ToI           3   |     3          H          3         3        5        6
 Hindu        25       25         25          25        25       4        4
 ET           4         4          4          4         4        4        10
 BM           15        15         15        15         15       15       15
